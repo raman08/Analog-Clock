@@ -1,0 +1,104 @@
+body{
+	min-height: 100vh;
+	min-width: 100vw;
+	margin: 0%;
+	display: flex;
+	flex: 1;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-color: #7d9b9b;
+}
+
+.clock{
+	width: 28rem;
+	height: 28rem;
+	border: 0.4rem solid #292828af;
+	border-radius: 50%;
+	padding: 2rem;
+	position: relative;
+	margin: 50px auto;
+	box-shadow:
+		-2px -1px 6px 3px #181515,
+		0px -1px 2px 3px #f3eeef,
+		0px 1px 16px 7px #0c0404,
+		inset -1px -1px 2px 14px #504d4d;
+	background-color: #26f8f877;
+	background-image: url("../images/clock.svg");
+	background-size: 32rem;
+}
+
+.clock::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+}
+
+.clock-face{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-3px);
+}
+
+.hand{
+	width: 50%;
+	height: 6px;
+	background-color: #000000;
+	position: absolute;
+	top: 50%;
+	transform-origin: 90%;
+	transform: rotate(90deg);
+	transition: all 0.07s;
+	transition-timing-function: cubic-bezier(0.9, 0.22, 0.46, 2.05);
+	border-radius: 55%;
+}
+
+#second-hand{
+	height: 2px;
+	width: 54%;
+	margin-left: 1.3%;
+	background-color: #ff0000;
+}
+
+#minute-hand{
+	height: 5px;
+	width: 46%;
+	margin-left: 8.5%;
+}
+
+#hour-hand{
+	height: 8px;
+	width: 33%;
+	margin-left: 20.2%;
+}
+
+footer {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0.4rem;
+	width: 100%;
+
+}
+
+.footer {
+	padding: 1rem 0;
+	text-align: center;
+	font-size: 125%;
+	font-weight: bolder;
+	color: #0f3c3f80;
+	font-family: "jazz-font";
+	text-align: center;
+	justify-content: center;
+	font-family: "Annie Use Your Telescope";
+}
