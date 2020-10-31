@@ -4,7 +4,7 @@ const minuteHand = document.querySelector("#minute-hand");
 const hourHand = document.querySelector("#hour-hand");
 
 // Selecting the tickling music
-const tick = new Audio("../sounds/tick.wav");
+const tick = new Audio("sounds/tick.wav");
 
 // Function to set hands
 function setDate() {
