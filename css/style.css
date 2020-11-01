@@ -82,22 +82,19 @@ body{
 }
 
 footer {
-	display: flex;
-	width: 100%;
 	position: fixed;
-	left: 0;
-	bottom: 0.4rem;
 	width: 100%;
+	bottom: 0pt;
+	left: 0pt;
 
+	background-color: #c7b3b391;
 }
 
-.footer {
-	padding: 1rem 0;
+.footer_contents {
 	text-align: center;
-	font-size: 125%;
+	font-size: 105%;
 	font-weight: bolder;
 	color: #0f3c3f80;
-	font-family: "jazz-font";
 	text-align: center;
 	justify-content: center;
 	font-family: "Annie Use Your Telescope";
